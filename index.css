@@ -1,0 +1,53 @@
+:root{
+    --green:hsl(75, 94%, 57%);
+    --white:hsl(0, 0%, 100%);
+    --gray-700:hsl(0, 0%, 20%);
+    --gray-800:hsl(0, 0%, 12%);
+    --gray-900:hsl(0, 0%, 8%);
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    max-width: 1440px;
+     height: 100vh;
+     background-color: var(--gray-900);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+}
+.card {
+    max-width: 384px;
+    padding: 24px;
+    background-color: var(--gray-800);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 20px;
+}
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.card-header img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
